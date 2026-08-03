@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --curio-primary: #0B1F3A;
+    --curio-secondary: #FF7A00;
+    --curio-accent: #FFB347;
+    --curio-bg: #FFFFFF;
+    --curio-section-bg: #F8FAFC;
+    --curio-cards: #FFFFFF;
+    --curio-heading: #0F172A;
+    --curio-body: #64748B;
+    --curio-border: #E5E7EB;
+    --curio-success: #10B981;
+    --curio-warning: #F59E0B;
+  }
+
+  body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--curio-body);
+    background-color: var(--curio-bg);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--curio-heading);
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Glassmorphism & Custom Effects */
+.curio-glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(229, 231, 235, 0.8);
+}
+
+.curio-glass-dark {
+  background: rgba(11, 31, 58, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.curio-shadow-soft {
+  box-shadow: 0 10px 30px -10px rgba(11, 31, 58, 0.05), 0 4px 6px -2px rgba(11, 31, 58, 0.02);
+}
+
+.curio-shadow-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.curio-shadow-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(11, 31, 58, 0.12), 0 8px 12px -4px rgba(255, 122, 0, 0.08);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8FAFC;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF7A00;
+}
+
+/* Floating animation keyframes */
+@keyframes curio-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1.5deg);
+  }
+}
+
+.animate-curio-float {
+  animation: curio-float 6s ease-in-out infinite;
+}
+
+.animate-curio-float-delayed {
+  animation: curio-float 7s ease-in-out 2s infinite;
+}
+
+/* Glowing background pulse */
+@keyframes curio-glow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.08);
+  }
+}
+
+.animate-curio-glow {
+  animation: curio-glow 8s ease-in-out infinite;
+}
+

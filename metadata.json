@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix CURIO Tech Accessories",
+  "description": "Where Tech Meets Trend — Premium Minimal Scandinavian Technology Accessories showcase and product discovery experience.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

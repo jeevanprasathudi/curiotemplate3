@@ -9,6 +9,7 @@ import { Statistics } from './components/Statistics';
 import { BrandStory } from './components/BrandStory';
 import { CustomerReviews } from './components/CustomerReviews';
 import { InstagramGallery } from './components/InstagramGallery';
+import { ReelsSection } from './components/ReelsSection';
 import { FAQSection } from './components/FAQSection';
 import { Newsletter } from './components/Newsletter';
 import { FinalCTA } from './components/FinalCTA';
@@ -94,6 +95,9 @@ export default function App() {
 
         {/* 11. INSTAGRAM COMMUNITY GALLERY */}
         <InstagramGallery onOpenComingSoon={handleOpenComingSoon} />
+
+        {/* 11b. INSTAGRAM REELS VIDEO SECTION */}
+        <ReelsSection />
 
         {/* 12. FREQUENTLY ASKED QUESTIONS */}
         <FAQSection />

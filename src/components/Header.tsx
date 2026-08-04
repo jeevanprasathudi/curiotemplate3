@@ -85,21 +85,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenComingSoon, onSelectCatego
             <a
               href="#hero"
               onClick={(e) => handleNavClick(e, '#hero')}
-              className="flex items-center space-x-2.5 group bg-black/20 hover:bg-black/30 backdrop-blur-md px-4 py-2 rounded-2xl border border-white/20 shadow-2xl transition-all duration-300 hover:scale-[1.03]"
+              className="flex items-center group transition-transform duration-300 hover:scale-[1.03]"
             >
-              <div className="w-10 h-10 rounded-xl bg-[#0B1F3A] flex items-center justify-center text-white shadow-lg group-hover:bg-[#FF7A00] transition-colors duration-300">
-                <span className="font-extrabold text-xl tracking-tighter text-[#FF7A00] group-hover:text-white">
-                  C
-                </span>
-              </div>
-              <div className="flex flex-col text-left">
-                <span className="text-2xl font-black tracking-widest text-white font-['Space_Grotesk',sans-serif]">
-                  CURIO
-                </span>
-                <span className="text-[9px] font-bold tracking-[0.25em] uppercase text-[#FF7A00]">
-                  Tech Meets Trend
-                </span>
-              </div>
+              <img
+                src="/src/assets/images/Logowb.png"
+                alt="CURIO Logo"
+                className="h-14 md:h-16 w-auto object-contain drop-shadow-md rounded-2xl border-2 border-white/30 p-1.5 bg-black/10 backdrop-blur-xs"
+              />
             </a>
           </motion.div>
         )}
@@ -132,19 +124,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenComingSoon, onSelectCatego
             onClick={(e) => handleNavClick(e, '#hero')}
             className="flex items-center space-x-2.5 group hover:scale-[1.03] transition-transform duration-300"
           >
-            <div className="w-10 h-10 rounded-xl bg-[#0B1F3A] flex items-center justify-center text-white shadow-md group-hover:bg-[#FF7A00] transition-colors">
-              <span className="font-bold text-xl tracking-tighter text-[#FF7A00] group-hover:text-white">
-                C
-              </span>
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-extrabold tracking-wider text-[#0F172A] font-['Space_Grotesk',sans-serif]">
-                CURIO
-              </span>
-              <span className="text-[9px] font-bold tracking-widest uppercase text-[#FF7A00]">
-                Tech x Trend
-              </span>
-            </div>
+            <img
+              src="/src/assets/images/Logo.png"
+              alt="CURIO — Where Tech Meets Trend"
+              className="h-10 w-auto object-contain rounded-lg shadow-sm"
+            />
           </a>
 
           {/* DESKTOP NAV LINKS WITH SUBTLE HOVER UNDERLINE */}
@@ -165,10 +149,10 @@ export const Header: React.FC<HeaderProps> = ({ onOpenComingSoon, onSelectCatego
           {/* RIGHT SIDE CTA BUTTON */}
           <div className="hidden lg:flex items-center space-x-4">
             <button
-              onClick={() => onOpenComingSoon('Sticky Nav Shop Now')}
+              onClick={() => onOpenComingSoon('Sticky Nav Get Started')}
               className="px-6 py-2.5 rounded-full text-xs font-bold text-white bg-[#0B1F3A] hover:bg-[#FF7A00] transition-all shadow-md hover:shadow-lg hover:scale-[1.03] active:scale-[0.98] flex items-center space-x-2 group"
             >
-              <span>Shop Now</span>
+              <span>Get Started</span>
               <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
             </button>
           </div>
@@ -237,7 +221,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenComingSoon, onSelectCatego
                     }}
                     className="w-full py-3.5 rounded-full text-sm font-bold text-white bg-[#0B1F3A] hover:bg-[#FF7A00] transition-colors text-center shadow-lg flex items-center justify-center space-x-2"
                   >
-                    <span>Shop Now</span>
+                    <span>Get Started</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
                 </div>

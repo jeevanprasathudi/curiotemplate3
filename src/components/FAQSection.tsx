@@ -1,21 +1,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { FAQS } from '../data/mockData';
-import { Plus, Minus, HelpCircle, Sparkles, Search } from 'lucide-react';
+import { Plus, Minus, HelpCircle } from 'lucide-react';
 
 export const FAQSection: React.FC = () => {
   const [openFaqId, setOpenFaqId] = useState<string | null>(FAQS[0].id);
-  const [searchFilter, setSearchFilter] = useState('');
 
   const toggleFaq = (id: string) => {
     setOpenFaqId((prev) => (prev === id ? null : id));
   };
-
-  const filteredFaqs = FAQS.filter(
-    (f) =>
-      f.question.toLowerCase().includes(searchFilter.toLowerCase()) ||
-      f.answer.toLowerCase().includes(searchFilter.toLowerCase())
-  );
 
   return (
     <section id="faq" className="py-24 bg-white relative overflow-hidden scroll-mt-20">
@@ -33,23 +26,11 @@ export const FAQSection: React.FC = () => {
           <p className="text-slate-600 text-base sm:text-lg">
             Everything you need to know about CURIO launch timelines, warranties, and shipping.
           </p>
-
-          {/* Quick FAQ Search */}
-          <div className="relative max-w-md mx-auto pt-4">
-            <Search className="w-4 h-4 absolute left-3.5 top-[26px] text-slate-400" />
-            <input
-              type="text"
-              placeholder="Search questions (e.g. shipping, warranty, trial)..."
-              value={searchFilter}
-              onChange={(e) => setSearchFilter(e.target.value)}
-              className="w-full pl-10 pr-4 py-3 bg-slate-50 border border-slate-200 rounded-full text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FF7A00]"
-            />
-          </div>
         </div>
 
         {/* Accordions List */}
         <div className="space-y-4">
-          {filteredFaqs.map((faq) => {
+          {FAQS.map((faq) => {
             const isOpen = openFaqId === faq.id;
 
             return (

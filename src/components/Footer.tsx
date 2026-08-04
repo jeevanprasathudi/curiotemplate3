@@ -37,12 +37,11 @@ export const Footer: React.FC<FooterProps> = ({ onOpenComingSoon, onSelectCatego
           {/* COL 1: ABOUT CURIO */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center space-x-2.5">
-              <div className="w-9 h-9 rounded-xl bg-white flex items-center justify-center text-[#0B1F3A]">
-                <span className="font-bold text-lg text-[#FF7A00]">C</span>
-              </div>
-              <span className="text-xl font-extrabold tracking-wider text-white font-['DM_Sans']">
-                CURIO
-              </span>
+              <img
+                src="/src/assets/images/Logowb.png"
+                alt="CURIO Logo"
+                className="h-9 w-auto object-contain rounded-lg shadow-sm"
+              />
             </div>
 
             <p className="text-sm text-slate-400 leading-relaxed max-w-sm">

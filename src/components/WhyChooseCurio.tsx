@@ -28,7 +28,7 @@ export const WhyChooseCurio: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-          <div className="inline-flex items-center space-x-2.5 px-4 py-1.5 rounded-full bg-[#0B1F3A] text-white text-[11px] font-extrabold tracking-widest uppercase shadow-lg shadow-[#0B1F3A]/15 border border-[#FF7A00]/40">
+          <div className="inline-flex items-center space-x-2.5 px-4 py-1.5 rounded-full bg-[#0B1F3A] text-white text-[11px] font-extrabold tracking-widest uppercase shadow-lg shadow-[#0B1F3A]/15 border border-[#FF7A00]/40 mt-0 mb-6">
             <Handshake className="w-3.5 h-3.5 text-[#FF7A00]" />
             <span className="bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent">THE CURIO PROMISE</span>
           </div>

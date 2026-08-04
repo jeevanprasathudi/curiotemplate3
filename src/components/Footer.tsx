@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Instagram, Twitter, Facebook, Youtube, ArrowUp, Send, CheckCircle2 } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import logoWb from '../assets/images/Logowb.png';
 
 interface FooterProps {
   onOpenComingSoon: (source?: string) => void;
@@ -38,7 +39,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenComingSoon, onSelectCatego
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center space-x-2.5">
               <img
-                src="/src/assets/images/Logowb.png"
+                src={logoWb}
                 alt="CURIO Logo"
                 className="h-9 w-auto object-contain rounded-lg shadow-sm"
               />

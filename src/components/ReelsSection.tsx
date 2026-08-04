@@ -1,5 +1,9 @@
 import React from 'react';
 import { Play, Eye, Heart, Music2, ExternalLink, Film } from 'lucide-react';
+import reelHeadphones from '../assets/images/curio_reel_headphones_1785821192580.jpg';
+import reelPowerbank from '../assets/images/curio_reel_powerbank_1785821171137.jpg';
+import reelSpeaker from '../assets/images/curio_reel_speaker_1785821148071.jpg';
+import reelEarbuds from '../assets/images/curio_reel_earbuds_1785821128046.jpg';
 
 export interface ReelItem {
   id: string;
@@ -16,7 +20,7 @@ const REELS: ReelItem[] = [
   {
     id: 'reel-1',
     title: 'Unboxing the SoundSculpt ANC Headphones — Pure noise cancellation test 🎧',
-    thumbnail: '/src/assets/images/curio_reel_headphones_1785821192580.jpg',
+    thumbnail: reelHeadphones,
     views: '542K',
     likes: '48.2K',
     creator: '@curio.tech',
@@ -26,7 +30,7 @@ const REELS: ReelItem[] = [
   {
     id: 'reel-2',
     title: 'Testing the 15W magnetic wireless snap on PowerVault 10K ⚡ MagSafe ready',
-    thumbnail: '/src/assets/images/curio_reel_powerbank_1785821171137.jpg',
+    thumbnail: reelPowerbank,
     views: '810K',
     likes: '73.5K',
     creator: '@curio.tech',
@@ -36,7 +40,7 @@ const REELS: ReelItem[] = [
   {
     id: 'reel-3',
     title: 'Sound test: SubCube Mini Speaker filling an entire studio room 🔊',
-    thumbnail: '/src/assets/images/curio_reel_speaker_1785821148071.jpg',
+    thumbnail: reelSpeaker,
     views: '320K',
     likes: '29.1K',
     creator: '@curio.tech',
@@ -46,7 +50,7 @@ const REELS: ReelItem[] = [
   {
     id: 'reel-4',
     title: 'Unboxing AirBeats Pro — Ceramic touch controls & instant pairing 🖤',
-    thumbnail: '/src/assets/images/curio_reel_earbuds_1785821128046.jpg',
+    thumbnail: reelEarbuds,
     views: '695K',
     likes: '61.8K',
     creator: '@curio.tech',

@@ -30,7 +30,7 @@ export const CATEGORIES: CategoryInfo[] = [
     title: 'Power Banks',
     description: 'Ultra-slim magnetic wireless chargers with 65W GaN fast-charge technology.',
     itemCount: 9,
-    image: '/src/assets/images/curio_powerbank_category_1785816621307.jpg',
+    image: '/images/curio_powerbank_category_1785816621307.jpg',
     accentColor: '#0F172A',
   },
   {
@@ -172,10 +172,10 @@ export const PRODUCTS: Product[] = [
     reviewCount: 184,
     isNew: true,
     model3DType: 'powerbank',
-    image: '/src/assets/images/curio_powervault_20k_product_1785816767907.jpg',
+    image: '/images/curio_powervault_20k_product_1785816767907.jpg',
     gallery: [
-      '/src/assets/images/curio_powervault_20k_product_1785816767907.jpg',
-      '/src/assets/images/curio_powerbank_category_1785816621307.jpg',
+      '/images/curio_powervault_20k_product_1785816767907.jpg',
+      '/images/curio_powerbank_category_1785816621307.jpg',
     ],
     colors: [
       { name: 'Nordic Obsidian', hex: '#0B1F3A' },
@@ -303,10 +303,10 @@ export const PRODUCTS: Product[] = [
     rating: 4.7,
     reviewCount: 310,
     model3DType: 'powerbank',
-    image: '/src/assets/images/curio_powerbank_10k_product_1785816747544.jpg',
+    image: '/images/curio_powerbank_10k_product_1785816747544.jpg',
     gallery: [
-      '/src/assets/images/curio_powerbank_10k_product_1785816747544.jpg',
-      '/src/assets/images/curio_powerbank_category_1785816621307.jpg',
+      '/images/curio_powerbank_10k_product_1785816747544.jpg',
+      '/images/curio_powerbank_category_1785816621307.jpg',
     ],
     colors: [
       { name: 'Arctic Silver', hex: '#E2E8F0' },

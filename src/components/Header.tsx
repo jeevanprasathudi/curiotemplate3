@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ShoppingBag, Menu, X, ArrowRight } from 'lucide-react';
+import logoWb from '../assets/images/Logowb.png';
+import logo from '../assets/images/Logo.png';
 
 interface HeaderProps {
   onOpenComingSoon: (source?: string) => void;
@@ -88,7 +90,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenComingSoon, onSelectCatego
               className="flex items-center group transition-transform duration-300 hover:scale-[1.03]"
             >
               <img
-                src="/src/assets/images/Logowb.png"
+                src={logoWb}
                 alt="CURIO Logo"
                 className="h-14 md:h-16 w-auto object-contain drop-shadow-md rounded-2xl border-2 border-white/30 p-1.5 bg-black/10 backdrop-blur-xs"
               />
@@ -125,7 +127,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenComingSoon, onSelectCatego
             className="flex items-center space-x-2.5 group hover:scale-[1.03] transition-transform duration-300"
           >
             <img
-              src="/src/assets/images/Logo.png"
+              src={logo}
               alt="CURIO — Where Tech Meets Trend"
               className="h-10 w-auto object-contain rounded-lg shadow-sm"
             />
